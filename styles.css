@@ -3,7 +3,7 @@
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    font-family: sans-serif;
+    font-family: fantasy;
     
 }
 .navbar{
@@ -78,7 +78,6 @@
     height: 90vh;
     background-repeat: no-repeat;
     overflow-x: scroll;
-    filter: blur(3px);
 }
 h2{
     font-size: 500%;
@@ -89,7 +88,7 @@ h2{
 }
 .image1{
     padding-top: 20px;
-    width: 500px;
+    width: 600px;
     height: 500px;
     background-color: white;
     background-attachment: fixed;
@@ -99,7 +98,7 @@ h2{
 .main{
     display: flex;
 }
-.container{
+.about_container{
     align-items: center;
     padding-top: 15%;
     padding-left: 10%;
@@ -109,22 +108,30 @@ h2{
 }
 
 /* Products */
-/* .col-mod-4{
-    float: left;
-    width: 30%;
-    padding-left: 90px;
-} */
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
+.container{
+    padding-top: 20px;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
 }
-.row{
-    display: flex;
+.col-mod-4{
+    width: 30%;
+    justify-content: space-around;
+    padding-left: 9%;
 }
 h5{
-    padding-top: 100px;
-    padding-left: 40%;
-    font-weight: 200;
-    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
 }
+.card-body1{
+    padding-bottom: 60px;
+}
+footer{
+    padding-left: 40%;
+    position: fixed;
+}
+
