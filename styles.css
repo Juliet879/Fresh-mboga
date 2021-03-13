@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.navbar{
+    background: #035507;
+    display: flex;
+    height: 80px;
+    font-size: 1.2rem;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    align-items: center;
+    z-index: 999;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.nav_menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav_item{
+    height: 80px;
+}
+.nav_link{
+    color: rgb(231, 211, 146);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+
+}
+.nav_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+.button{
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64fc45, #fdee1d, #eae6ec);  
+    background: linear-gradient(to right, #d6ccbf, #3acc1d, #c4b213);
+    border-radius: 4%; 
+    border: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    outline: none;
+    color: rgb(231, 211, 146);
+    transition: all 0.3s ease ;
+}
+.nav_link:hover{
+    color: #9518fc;
+    transition: all 0.3s ease;
+}
+.landing{
+    background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    overflow-x: scroll;
+}
+#overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+h2{
+    font-size: 500%;
+}
+*{
+    margin: 0%;
+    padding: 0px;
+}
+.image1{
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+}
+.container{
+    align-items: center;
+    padding-top: 15%;
+    padding-left: 10%;
+    font-size: 20px;
+    font-family: fantasy;
+    color: rgb(71, 68, 68);
+}
+
+/* Products */
+.column{
+    float: left;
+    width: 30%;
+    padding-left: 90px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+    display: flex;
+}
+h5{
+    padding-top: 100px;
+    padding-left: 40%;
+    font-weight: 200;
+    font-size: 30px;
+}
