@@ -71,33 +71,47 @@
     color: #9518fc;
     transition: all 0.3s ease;
 }
+.cart{
+    width: 100px;
+    height: 70px;
+}
+
+
+/* landing page */
 .landing{
     background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg);
     background-attachment: fixed;
     background-position: center;
     height: 90vh;
     background-repeat: no-repeat;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    
 }
 h2{
     font-size: 500%;
+    padding-left: 40%;
 }
 *{
     margin: 0%;
     padding: 0px;
 }
-.image1{
-    padding-top: 20px;
-    width: 600px;
-    height: 500px;
-    background-color: white;
+.main{
+    background-image: url(https://www.macmillandictionary.com/external/slideshow/thumb/White_thumb.png);
     background-attachment: fixed;
     background-position: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+.image1{
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 600px;
+    height: 500px;
     height: 100vh;
 }
-.main{
-    display: flex;
-}
+
 .about_container{
     align-items: center;
     padding-top: 15%;
@@ -108,25 +122,20 @@ h2{
 }
 
 /* Products */
-.container{
-    padding-top: 20px;
-    width: 600px;
-    height: 500px;
-    background-color: white;
+
+.main2{
+    background-color: transparent;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 15%;
 }
 .col-mod-4{
     width: 30%;
     justify-content: space-around;
     padding-left: 9%;
 }
-h5{
-    padding-top: 20px;
-    padding-bottom: 50px;
-    
-}
+
 .card-body1{
     padding-bottom: 60px;
 }
