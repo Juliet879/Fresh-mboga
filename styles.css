@@ -84,22 +84,19 @@
     background-position: center;
     height: 90vh;
     background-repeat: no-repeat;
-    /* overflow-x: scroll; */
     
 }
 h2{
     font-size: 500%;
     padding-left: 40%;
 }
-*{
-    margin: 0%;
-    padding: 0px;
-}
+
 .main{
-    background-image: url(https://www.macmillandictionary.com/external/slideshow/thumb/White_thumb.png);
+    /* background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg); */
+    background-color: rgba(128, 128, 128, 0.13);
     background-attachment: fixed;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     display: flex;
 
@@ -108,7 +105,6 @@ h2{
     padding-top: 20px;
     padding-left: 40px;
     width: 600px;
-    height: 500px;
     height: 100vh;
 }
 
@@ -129,18 +125,27 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 15%;
+    height: 100vh;
+
 }
 .col-mod-4{
     width: 30%;
-    justify-content: space-around;
-    padding-left: 9%;
+    justify-content: space-evenly;
+    padding-left: 10%;
 }
 
 .card-body1{
     padding-bottom: 60px;
 }
-footer{
+
+h5{
     padding-left: 40%;
-    position: fixed;
+    color: black;
+}
+.cad{
+    padding-top: 45px;
+}
+footer{
+    padding-left: 45%;
 }
 
