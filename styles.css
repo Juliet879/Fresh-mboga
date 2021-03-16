@@ -119,7 +119,7 @@ h2{
 
 /* Products */
 
-.main2{
+/* .main2{
     background-color: transparent;
     background-attachment: fixed;
     background-position: center;
@@ -127,24 +127,15 @@ h2{
     padding-top: 15%;
     height: 100vh;
 
+} */
+.row img{
+    height: 200px;
+    width: 200px;
 }
-.col-mod-4{
-    width: 30%;
-    justify-content: space-evenly;
-    padding-left: 10%;
-}
-
-.card-body1{
-    padding-bottom: 60px;
+.row img:hover{
+    opacity: 2px;
 }
 
-h5{
-    padding-left: 40%;
-    color: black;
-}
-.cad{
-    padding-top: 45px;
-}
 footer{
     padding-left: 45%;
 }
