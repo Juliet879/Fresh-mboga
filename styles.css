@@ -158,5 +158,9 @@ h5{
     opacity: 0.3;
     color: rgba(172, 255, 47, 0.479);
 }
+#contacts{
+    width: 200%;
+    background-color: #035507;
+}
 
 
