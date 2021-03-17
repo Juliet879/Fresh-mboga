@@ -8,6 +8,7 @@
     <title>myWebsite</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
 
 </head>
@@ -27,7 +28,9 @@
 
     <!-- landing -->
     <div class="landing" id="bg-text">
-        <h2>Fresh Mboga</h2>
+
+        <marquee id="heading" behavior="alternate">Fresh Mboga</marquee>
+
     </div>
 
     <!-- about page -->
@@ -45,171 +48,188 @@
 
     <!-- products -->
     <div class="container">
-            <h5>Green-Leafy Vegetables</h5>
+
+        <h5 id="row1">Green-Leafy Vegetables</h5>
 
 
-            <div class="row" id="row1">
+        <div class="row" id="overlay">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/hybrid grn spinach.jpg" alt="greens" style="width:100%">
+                    <div class="card-body">
+                        <h4><b>Hybrid spinach</b></h4>
+                        <p>Ksh.120 per Kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/kales.webp" alt="greens" style="width:100%">
+                    <div class="card-body">
+                        <h4><b>Sukumawiki</b></h4>
+                        <p>Ksh.100 per Kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/images/spinach.png" alt="greens" style="width:100%">
+                    <div class="card-body">
+                        <h4><b>Spinach</b></h4>
+                        <p>Ksh.110 per Kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/fresh-methi.jpg" alt="roots" style="width:100%">
+                    <div class="card-body">
+                        <h4><b>Fresh methi</b></h4>
+                        <p>Ksh.150 per Kg</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5>Root Vegetables</h5>
+            <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="images/hybrid grn spinach.jpg" alt="greens" style="width:100%">
+                        <img src="images/arrowroot.png" alt="roots" id="changeimg" style="width:100%">
                         <div class="card-body">
-                            <h4><b>Hybrid spinach</b></h4>
-                            <p>Ksh.120 per Kg</p>
+                            <h4><b>Arrow roots</b></h4>
+                            <p>Ksh.150 per Kg</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="images/kales.webp" alt="greens" style="width:100%">
+                        <img src="images/sweet potatoes.jpg" alt="roots" style="width:100%">
                         <div class="card-body">
-                            <h4><b>Sukumawiki</b></h4>
-                            <p>Ksh.100 per Kg</p>
+                            <h4><b>Sweet potatoes</b></h4>
+                            <p>Ksh.130 per Kg</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="/images/spinach.png" alt="greens" style="width:100%">
+                        <img src="/images/irish.jpg" alt="roots" style="width:100%">
                         <div class="card-body">
-                            <h4><b>Spinach</b></h4>
+                            <h4><b>Irish potatoes</b></h4>
                             <p>Ksh.110 per Kg</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="images/fresh-methi.jpg" alt="roots" style="width:100%">
+                        <img src="images/cassava.jpg" alt="roots" style="width:100%">
                         <div class="card-body">
-                            <h4><b>Fresh methi</b></h4>
+                            <h4><b>Cassava</b></h4>
                             <p>Ksh.150 per Kg</p>
                         </div>
                     </div>
                 </div>
 
 
-                <h5>Root Vegetables</h5>
+                <h5>Other Vegetables</h5>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/arrowroot.png" alt="roots" id="changeimg" style="width:100%">
+                            <img src="images/red onions.jpg" alt="roots" style="width:100%">
                             <div class="card-body">
-                                <h4><b>Arrow roots</b></h4>
-                                <p>Ksh.150 per Kg</p>
+                                <h4><b>Red onions</b></h4>
+                                <p>Ksh.300 per Kg</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/sweet potatoes.jpg" alt="roots" style="width:100%">
+                            <img src="images/tomatoes.jpg" alt="roots" style="width:100%">
                             <div class="card-body">
-                                <h4><b>Sweet potatoes</b></h4>
-                                <p>Ksh.130 per Kg</p>
+                                <h4><b>Totatoes</b></h4>
+                                <p>Ksh.200 per Kg</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="/images/irish.jpg" alt="roots" style="width:100%">
+                            <img src="/images/ovacadoes.jpg" alt="roots" style="width:100%">
                             <div class="card-body">
-                                <h4><b>Irish potatoes</b></h4>
+                                <h4><b>Ovacado</b></h4>
                                 <p>Ksh.110 per Kg</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card">
-                            <img src="images/cassava.jpg" alt="roots" style="width:100%">
+                            <img src="images/garlic.jpeg" alt="roots" style="width:100%">
                             <div class="card-body">
-                                <h4><b>Cassava</b></h4>
+                                <h4><b>Garlic</b></h4>
+                                <p>Ksh.300 per Kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" id="last-row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/cabbage.png" alt="roots" style="width:100%">
+                            <div class="card-body">
+                                <h4><b>White cabbage</b></h4>
+                                <p>Ksh.200 per Kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="cad" src="images/purple cabbage.jpg" alt="roots" style="width:100%">
+                            <div class="card-body">
+                                <h4><b>Purple cabbage</b></h4>
+                                <p>Ksh.250 per Kg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="/images/broccoli.jpg" alt="roots" style="width:100%">
+                            <div class="card-body">
+                                <h4><b>Broccoli</b></h4>
                                 <p>Ksh.150 per Kg</p>
                             </div>
                         </div>
                     </div>
-
-
-                    <h5>Other Vegetables</h5>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="images/red onions.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Red onions</b></h4>
-                                    <p>Ksh.300 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="images/tomatoes.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Totatoes</b></h4>
-                                    <p>Ksh.200 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="/images/ovacadoes.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Ovacado</b></h4>
-                                    <p>Ksh.110 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="images/garlic.jpeg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Garlic</b></h4>
-                                    <p>Ksh.300 per Kg</p>
-                                </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="images/cucumber.jpg" alt="roots" style="width:100%">
+                            <div class="card-body">
+                                <h4><b>cucumber</b></h4>
+                                <p>Ksh.120 per Kg</p>
                             </div>
                         </div>
                     </div>
-
-
-                   <div class="row">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="images/cabbage.png" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>White cabbage</b></h4>
-                                    <p>Ksh.200 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img class="cad" src="images/purple cabbage.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Purple cabbage</b></h4>
-                                    <p>Ksh.250 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="/images/broccoli.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>Broccoli</b></h4>
-                                    <p>Ksh.150 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <img src="images/cucumber.jpg" alt="roots" style="width:100%">
-                                <div class="card-body">
-                                    <h4><b>cucumber</b></h4>
-                                    <p>Ksh.120 per Kg</p>
-                                </div>
-                            </div>
-                        </div>
-                        <footer>
+                    <!-- <footer>
                             <p> & copy Fresh Mboga 2021</p>
-                        </footer>
-                    </div>
+                        </footer> -->
                 </div>
+            </div>
+            <div id="contacts">
+                <h2>Contact Us</h2>
+                <div class="icon">
+                    <a class="ic" href="https://www.instagram.com/danielsindet254/" target="_blank"><i
+                            class="fa fa-instagram" color="white"></i></a>
+                    <a class="ic" href="https://www.facebook.com/Juliet Gisemba" target="_blank"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="ic" href="https://twitter.com/Julie_879" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="ic"
+                        href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com/mail&service=mail"
+                        target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a class="ic"
+                        href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://mail.google.com/mail&service=mail"
+                        target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
 
 </body>
 

@@ -7,6 +7,7 @@
     
 }
 .navbar{
+    padding-left: 50px;
     background: #035507;
     display: flex;
     height: 80px;
@@ -86,9 +87,8 @@
     background-repeat: no-repeat;
     
 }
-h2{
+#heading{
     font-size: 500%;
-    padding-left: 40%;
 }
 
 .main{
@@ -135,8 +135,28 @@ h2{
 .row img:hover{
     opacity: 2px;
 }
-
-footer{
-    padding-left: 45%;
+#row1{
+    padding-top: 5%;
 }
+
+h5{
+    color: green;
+    font-size: 25px;
+}
+#last-row{
+    padding-top: 25px;
+}
+.card{
+    border-bottom-color: green;
+    border-bottom-width: 2px;
+  }
+/* 
+.row img{
+    opacity: 0.3;
+} */
+.row img:hover{
+    opacity: 0.3;
+    color: rgba(172, 255, 47, 0.479);
+}
+
 
