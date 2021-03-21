@@ -7,15 +7,13 @@
     
 }
 .navbar{
-    padding-left: 50px;
     background: #035507;
     display: flex;
     height: 80px;
     font-size: 1.2rem;
-    justify-content: center;
+    text-transform: uppercase;
     position: sticky;
     top: 0%;
-    align-items: center;
     z-index: 999;
 }
 .nav_container{
@@ -33,9 +31,7 @@
     display: flex;
     align-items: center;
 }
-.nav_item{
-    height: 80px;
-}
+
 .nav_link{
     color: rgb(231, 211, 146);
     display: flex;
@@ -54,8 +50,11 @@
     padding: 0 1rem;
     width: 100%;
 }
-.button{
-    background: #833ab4;  /* fallback for old browsers */
+.login{
+    color: rgb(231, 211, 146);
+}
+/* .button{
+    background: #833ab4; 
     background: -webkit-linear-gradient(to right, #64fc45, #fdee1d, #eae6ec);  
     background: linear-gradient(to right, #d6ccbf, #3acc1d, #c4b213);
     border-radius: 4%; 
@@ -67,7 +66,7 @@
     outline: none;
     color: rgb(231, 211, 146);
     transition: all 0.3s ease ;
-}
+} */
 .nav_link:hover{
     color: #9518fc;
     transition: all 0.3s ease;
@@ -142,6 +141,8 @@
 h5{
     color: green;
     font-size: 25px;
+    padding-top: 5%;
+    margin: auto;
 }
 #last-row{
     padding-top: 25px;
@@ -150,17 +151,29 @@ h5{
     border-bottom-color: green;
     border-bottom-width: 2px;
   }
+h3{
+    padding-top: 10%;
+}
 /* 
 .row img{
     opacity: 0.3;
 } */
-.row img:hover{
+/* .row img:hover{
     opacity: 0.3;
-    color: rgba(172, 255, 47, 0.479);
-}
+    color: rgba(172, 255, 47, 0.925);
+} */
 #contacts{
     width: 200%;
     background-color: #035507;
 }
-
+#sign-up{
+    margin-left: 200px;
+}
+h3{
+    font-size: 40px;
+}
+footer{
+    padding-left: 45%;
+    padding-top: 5%;
+}
 
