@@ -16,42 +16,45 @@
     top: 0%;
     z-index: 999;
 }
-.nav_container{
+.nav_menu{
+    list-style: none;
+    display: flex;
+}
+/* .nav_container{
     display: flex;
     justify-content: space-around;
     height: 80px;
     width: 100%;
     margin: 0 auto;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.nav_menu{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
+} */
 
 .nav_link{
-    color: rgb(231, 211, 146);
+    color: rgb(228, 195, 88);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 125px;
     text-decoration: none;
     height: 100%;
-    transition: all 0.3s ease;
 
 }
 .nav_btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
     width: 100%;
+    padding-left: 500px;
+}
+.login:hover{
+    color: #fff;
 }
 .login{
     color: rgb(231, 211, 146);
+}
+.nav_link:hover{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.cart{
+    width: 100px;
+    height: 70px;
 }
 /* .button{
     background: #833ab4; 
@@ -67,14 +70,7 @@
     color: rgb(231, 211, 146);
     transition: all 0.3s ease ;
 } */
-.nav_link:hover{
-    color: #9518fc;
-    transition: all 0.3s ease;
-}
-.cart{
-    width: 100px;
-    height: 70px;
-}
+
 
 
 /* landing page */
@@ -88,31 +84,31 @@
 }
 #heading{
     font-size: 500%;
+    margin-top: 200px;
 }
 
 .main{
     /* background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg); */
-    background-color: rgba(128, 128, 128, 0.13);
+    background-color: rgba(199, 194, 194, 0.13);
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    height: 86vh;
     background-repeat: no-repeat;
     display: flex;
-
 }
 .image1{
-    padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding: 40px;
     width: 600px;
-    height: 100vh;
+    height: 80vh;
 }
 
 .about_container{
     align-items: center;
     padding-top: 15%;
-    padding-left: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: 20px;
-    font-family: fantasy;
     color: rgb(71, 68, 68);
 }
 
@@ -129,27 +125,21 @@
 } */
 .row img{
     height: 200px;
-    width: 200px;
-}
-.row img:hover{
-    opacity: 2px;
-}
-#row1{
-    padding-top: 5%;
+    width: 20px;
 }
 
 h5{
     color: green;
     font-size: 25px;
     padding-top: 5%;
-    margin: auto;
+    /* margin: auto; */
 }
 #last-row{
     padding-top: 25px;
 }
 .card{
     border-bottom-color: green;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
   }
 h3{
     padding-top: 10%;
@@ -173,7 +163,7 @@ h3{
     font-size: 40px;
 }
 footer{
-    padding-left: 45%;
-    padding-top: 5%;
+    padding-top: 200px;
+    margin: auto;
 }
 
