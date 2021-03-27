@@ -20,13 +20,6 @@
     list-style: none;
     display: flex;
 }
-/* .nav_container{
-    display: flex;
-    justify-content: space-around;
-    height: 80px;
-    width: 100%;
-    margin: 0 auto;
-} */
 
 .nav_link{
     color: rgb(228, 195, 88);
@@ -78,7 +71,7 @@
     background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg);
     background-attachment: fixed;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     
 }
@@ -87,20 +80,19 @@
     margin-top: 200px;
 }
 
+
+/* about */
 .main{
-    /* background-image: url(https://www.india.com/wp-content/uploads/2017/06/green-vegetables-.jpg); */
-    background-color: rgba(199, 194, 194, 0.13);
-    background-attachment: fixed;
-    background-position: center;
-    height: 86vh;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.123);
     display: flex;
 }
 .image1{
-    padding-left: 20px;
-    padding: 40px;
-    width: 600px;
+    margin: auto;
+    width: 500px;
     height: 80vh;
+    padding: 40px;
+    padding-top: 60px;
 }
 
 .about_container{
@@ -114,25 +106,17 @@
 
 /* Products */
 
-/* .main2{
-    background-color: transparent;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 15%;
-    height: 100vh;
-
-} */
-.row img{
+img{
     height: 200px;
-    width: 20px;
 }
-
+h3{
+    padding-top: 10%;
+    font-size: 50px;
+}
 h5{
     color: green;
     font-size: 25px;
     padding-top: 5%;
-    /* margin: auto; */
 }
 #last-row{
     padding-top: 25px;
@@ -141,17 +125,6 @@ h5{
     border-bottom-color: green;
     border-bottom-width: 1px;
   }
-h3{
-    padding-top: 10%;
-}
-/* 
-.row img{
-    opacity: 0.3;
-} */
-/* .row img:hover{
-    opacity: 0.3;
-    color: rgba(172, 255, 47, 0.925);
-} */
 #contacts{
     width: 200%;
     background-color: #035507;
@@ -159,9 +132,7 @@ h3{
 #sign-up{
     margin-left: 200px;
 }
-h3{
-    font-size: 40px;
-}
+
 footer{
     padding-top: 200px;
     margin: auto;
