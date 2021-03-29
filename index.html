@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <link rel="stylesheet" href="styles.css" />
 
 </head>
@@ -21,7 +25,7 @@
                 <li class="nav_item"><a href="#about.html" class="nav_link" id="about-page">About</a></li>
                 <li class="nav_item"><a href="#product.html" class="nav_link" id="product-page">Products</a></li>
                 <li class="nav_item"><a href="#contacts.html" class="nav_link" id="contacts-page">Contacts</a></li>
-                <li class="nav_btn"><a href="#signup.html" class="login" id="sign-up">Login</a></li>
+                <li class="nav_btn"><a href="#signup.html" class="login" id="login">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -51,10 +55,10 @@
     <div class="container" id="product.html">
         <h3>Products</h3>
 
-        <h5>Green-Leafy Vegetables</h5>
+        <a href="leafy.html">Green-Leafy Vegetables</a>
         <div class="row" id="overlay">
             <div class="col-md-3">
-                <div class="card" style="width: 16rem;">
+                <div class="card">
                     <img src="images/hybrid grn spinach.jpg" alt="greens" >
                     <div class="card-body">
                         <h4><b>Hybrid spinach</b></h4>
@@ -63,7 +67,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 16rem;">
+                <div class="card">
                     <img src="images/kales.webp" alt="greens" >
                     <div class="card-body">
                         <h4><b>Sukumawiki</b></h4>
@@ -72,7 +76,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 16rem;">
+                <div class="card">
                     <img src="/images/spinach.png" alt="greens" >
                     <div class="card-body">
                         <h4><b>Spinach</b></h4>
@@ -81,7 +85,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" style="width: 16rem;">
+                <div class="card">
                     <img src="images/fresh-methi.jpg" alt="green" >
                     <div class="card-body">
                         <h4><b>Fresh methi</b></h4>
@@ -94,7 +98,7 @@
             <h5>Root Vegetables</h5>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
+                    <div class="card">
                         <img src="images/arrowroot.png" alt="roots" id="changeimg" >
                         <div class="card-body">
                             <h4><b>Arrow roots</b></h4>
@@ -103,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
+                    <div class="card">
                         <img src="images/sweet potatoes.jpg" alt="roots" >
                         <div class="card-body">
                             <h4><b>Sweet potatoes</b></h4>
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
+                    <div class="card">
                         <img src="/images/irish.JPG" alt="roots" >
                         <div class="card-body">
                             <h4><b>Irish potatoes</b></h4>
@@ -121,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="width: 16rem;">
+                    <div class="card">
                         <img src="images/cassava.jpg" alt="roots" >
                         <div class="card-body">
                             <h4><b>Cassava</b></h4>
@@ -134,7 +138,7 @@
                 <h5>Other Vegetables</h5>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="card" style="width: 16rem;">
+                        <div class="card">
                             <img src="images/red onions.jpg" alt="roots" >
                             <div class="card-body">
                                 <h4><b>Red onions</b></h4>
@@ -143,7 +147,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card" style="width: 16.5rem;">
+                        <div class="card" >
                             <img src="images/tomatoes.jpg" alt="roots" >
                             <div class="card-body">
                                 <h4><b>Totatoes</b></h4>
@@ -152,7 +156,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card" style="width: 16.5rem;">
+                        <div class="card" >
                             <img src="/images/avocado.jpg" alt="roots" >
                             <div class="card-body">
                                 <h4><b>Ovacado</b></h4>
@@ -161,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card" style="width: 16.5rem;">
+                        <div class="card" >
                             <img src="images/garlic.jpeg" alt="roots" >
                             <div class="card-body">
                                 <h4><b>Garlic</b></h4>
@@ -174,7 +178,7 @@
 
                 <div class="row" id="last-row">
                     <div class="col-md-3">
-                        <div class="card" style="width: 16rem;" >
+                        <div class="card" >
                             <img src="images/cabbage.png" alt="" >
                             <div class="card-body">
                                 <h4><b>White cabbage</b></h4>
@@ -183,7 +187,7 @@
                         </div>
                     </div>
                     <div class="col-md-3" >
-                        <div class="card" style="width: 16rem;">
+                        <div class="card">
                             <img class="cad" src="images/purple cabbage.jpg" alt="" >
                             <div class="card-body">
                                 <h4><b>Purple cabbage</b></h4>
@@ -192,7 +196,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card" style="width: 16rem;">
+                        <div class="card">
                             <img src="/images/broccoli.jpg" alt="" >
                             <div class="card-body">
                                 <h4><b>Broccoli</b></h4>
@@ -201,7 +205,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card" style="width: 16rem;">
+                        <div class="card">
                             <img src="images/cucumber.jpg" alt="" >
                             <div class="card-body">
                                 <h4><b>cucumber</b></h4>
@@ -235,9 +239,7 @@
             </div> -->
 
 
-            <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
-              crossorigin="anonymous"></script>
-            <script src="/script.js"></script>
+          
 </body>
 
 </html>

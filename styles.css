@@ -29,7 +29,6 @@
     width: 125px;
     text-decoration: none;
     height: 100%;
-
 }
 .nav_btn{
     width: 100%;
@@ -117,6 +116,7 @@ h5{
     color: green;
     font-size: 25px;
     padding-top: 5%;
+    cursor: pointer;
 }
 #last-row{
     padding-top: 25px;
