@@ -107,24 +107,25 @@
 
 img{
     height: 200px;
+    width: 200px;
 }
 h3{
     padding-top: 10%;
     font-size: 50px;
 }
-h5{
+.h5{
     color: green;
     font-size: 25px;
-    padding-top: 5%;
+    padding-top: 15%;
     cursor: pointer;
 }
-#last-row{
-    padding-top: 25px;
+.row{
+    margin-top: 20px;
 }
 .card{
     border-bottom-color: green;
     border-bottom-width: 1px;
-  }
+}
 #contacts{
     width: 200%;
     background-color: #035507;
