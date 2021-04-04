@@ -106,8 +106,9 @@
 /* Products */
 
 img{
-    height: 200px;
+    height: 150px;
     width: 200px;
+    margin-top: 0%;
 }
 h3{
     padding-top: 10%;
@@ -119,12 +120,21 @@ h3{
     padding-top: 15%;
     cursor: pointer;
 }
+.h5:hover{
+    text-decoration: none;
+    color: orangered;
+
+}
 .row{
     margin-top: 20px;
 }
 .card{
     border-bottom-color: green;
     border-bottom-width: 1px;
+    
+}
+.card1:hover + .add-cart{
+    display: block;
 }
 #contacts{
     width: 200%;
@@ -133,9 +143,19 @@ h3{
 #sign-up{
     margin-left: 200px;
 }
+.container{
+    margin-top: 0%;
+}
+.add-cart{
+    margin-left: 80px;
+    display: none;
 
+}
+#carouselExampleControls img{
+    width: 100%;
+}
 footer{
-    padding-top: 200px;
     margin: auto;
+    padding-left: 45%;
 }
 
