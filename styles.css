@@ -20,7 +20,9 @@
     list-style: none;
     display: flex;
 }
-
+li a{
+    text-decoration: none;
+}
 .nav_link{
     color: rgb(228, 195, 88);
     display: flex;
@@ -131,12 +133,17 @@ h3{
 .card{
     border-bottom-color: green;
     border-bottom-width: 1px;
-    
 }
-.card1:hover + .add-cart{
+button{
+    display: none;
+}
+
+.card1{
     display: block;
 }
-#contacts{
+.card1:hover{
+    color: green;
+}#contacts{
     width: 200%;
     background-color: #035507;
 }
@@ -146,15 +153,14 @@ h3{
 .container{
     margin-top: 0%;
 }
-.add-cart {
-    display: none;
-}
+
 button{
     background-color: rgb(218, 145, 9);
     margin-left: 25%;
     padding: 10px;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 10%;
 }
 footer{
     margin: auto;
