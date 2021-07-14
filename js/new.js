@@ -6,6 +6,22 @@ if (document.readyState == 'loading') {
 
 
 function ready() {
+    // carousel code 
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    
     // $(document).ready(function () {
     //     $('.card').click(function () {
     //         $('button').show();
@@ -102,11 +118,14 @@ function updateCartTotal() {
 }
 
 function purchaseCLicked(){
+    var cart = document.getElementsByClassName("cart-container")
+    cart.style.display = "block"
     alert('Thank you for working with us.Welcome Again')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while( cartItems.hasChildNodes){
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
-    
+  
 }
+

@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 * {
     margin: 0%;
     padding: 0%;
     scroll-behavior: smooth;
-    font-family: fantasy;
-    
+    font-family: 'EB Garamond', serif;    
 }
+/* navbar one */
 .navbar{
-    background: rgba(255, 255, 255, 0.253);
+    position: sticky;
+    z-index: 9999;
+    background: rgba(83, 126, 4, 0.884);
     display: flex;
     height: 70px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 0%;
 }
 .nav_menu{
@@ -21,7 +23,7 @@ li a{
     text-decoration: none;
 }
 .nav_link{
-    color: green;
+    color: rgb(241, 234, 232);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,55 +49,76 @@ li a{
     width: 100px;
     height: 70px;
 }
-/* .button{
-    background: #833ab4; 
-    background: -webkit-linear-gradient(to right, #64fc45, #fdee1d, #eae6ec);  
-    background: linear-gradient(to right, #d6ccbf, #3acc1d, #c4b213);
-    border-radius: 4%; 
-    border: none;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    outline: none;
-    color: rgb(231, 211, 146);
-    transition: all 0.3s ease ;
-} */
 
-
+/* navbar2 */
 
 /* landing page */
-.landing{
-    background-image:url(/images/root1.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
-    background-repeat: no-repeat;
-    
+
+.mySlides{
+    position: relative;
+    position: 50% 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
+}
+.navbar2{
+    background-color: rgb(195, 235, 200);
+    position: absolute;
+    display: flex;
+    top: 81%;
+    padding: 20px;
+    padding-right: 66.3%;
+
 }
 #heading{
     font-size: 500%;
     margin-top: 200px;
 }
+.icon{
+    display: flex;
+}
+
+#icon1{
+    width: 80px;
+    height: 70px;
+    margin-left: 120%;
+}
+#icon2{
+    width: 80px;
+    height: 70px;
+    margin-left: 320%;
+}
+#icon3{
+    width: 80px;
+    height: 70px;
+    margin-left: 450%;
+}
+#icon4{
+    width: 80px;
+    height: 70px;
+    margin-left: 600%;
+
+}
+
 
 
 /* about */
 .main{
-    height: 100vh;
+    height: 70vh;
     background-color: rgba(128, 128, 128, 0.123);
     display: flex;
 }
 .image1{
     margin: auto;
     width: 500px;
-    height: 80vh;
+    height: 60vh;
     padding: 40px;
     padding-top: 60px;
 }
 
 .about_container{
     align-items: center;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-left: 8%;
     padding-right: 8%;
     font-size: 20px;
@@ -103,77 +126,86 @@ li a{
 }
 
 /* Products */
-h4{
-    font-size: 20px;
+.productsh{
+     margin-left: 40%;
+     margin-top: 4%;
 }
 img{
     height: 150px;
     width: 200px;
     margin-top: 0%;
 }
-h3{
-    padding-top: 10%;
-    font-size: 50px;
-}
-.h5{
+.p{
     color: green;
-    font-size: 25px;
     cursor: pointer;
     text-decoration: none;
 }
 .h5:hover{
     text-decoration: none;
-    color: orangered;
-
+    color: rgb(133, 190, 19);
 }
 .row{
     margin-top: 20px;
     padding-bottom: 30px;
 }
 .card{
-    border-bottom-color: green;
     border-bottom-width: 1px;
 }
 .card1{
     display: block;
 }
-.card1:hover{
-    color: green;
-}#contacts{
+.shop-item{
+    box-shadow: 5px 5px 5px rgb(223, 228, 215);
+}
+#contacts{
     width: 200%;
     background-color: #035507;
 }
 #sign-up{
     margin-left: 200px;
 }
-.container{
+.bigContainer{
     margin-top: 0%;
-}
-.cart{
-    padding-top: 50px;
     display: flex;
-    justify-content: space-between;
-    padding-left: 5px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.categories{
+    background-color: wheat;
+    height: 70vh;
+    width: 13vw;
+    margin-left: 10%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+
+}
+.items{
+    margin-left: 2%;
 }
 
-button{
-    /* background-color: rgb(218, 145, 9); */
-    margin-left: 25%;
-    padding: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+.add-cart-button{
+    box-shadow: 10px 15px 30px rgb(167, 221, 60);
+    background-color: rgb(14, 109, 6);
+    margin-left: 20%;
+    padding: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
     margin-bottom: 7%;
-    border: 2px solid orange;
+    border-radius: 25px;
 }
-.cart-items{
+.add-cart-button:hover{
+    color: yellow;
+}
+.all-cart-item{
     display: flex;
 }
 
-.shop-item-body{
-    padding-left: 40px;
+.cart-total{
+    display: flex;
+
 }
+.shop-item-body{
+    margin-left: 20%;
+    margin-right: auto;}
 footer{
     padding-top: 23%;
     margin: auto;

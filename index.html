@@ -27,17 +27,40 @@
                 <li class="nav_item"><a href="#product.html" class="nav_link" id="product-page">Products</a></li>
                 <li class="nav_item"><a href="#contacts.html" class="nav_link" id="contacts-page">Contacts</a></li>
                 <li class="nav_btn"><a href="#signup.html" class="nav_link" id="login">Login</a></li>
-                <li class="cart_btn"><a href="addcart.html" class="nav_link" id="cart">Cart</a></li>
+                <li class="cart_btn"><a href="addcart.html" class="nav_link cart-purchase" id="cart" onclick="purchaseCLicked()">Cart</a></li>
             </ul>
             <!-- <button>Add-Cart</button> -->
         </div>
     </nav>
 
+
     <!-- landing -->
     <div class="landing" id="index.html">
+        <img class="mySlides" src="/images/landing1.jpg" alt="" width="100%">
+        <img class="mySlides" src="/images/land2.jpg" alt="" width="100%">
+        <img class="mySlides" src="/images/land3.jpg" alt="" width="100%">
+        <img class="mySlides" src="/images/land4.png" alt="" width="100%">
 
-        <marquee id="heading" behavior="alternate">Fresh Veges</marquee>
-
+        <nav class="navbar2">
+            <div class="icon">
+                <img id="icon1" src="/images/truck-car-removebg-preview.png" alt="">
+                <div class="icon-details">
+                    <p>Delivery 1-hour slots Available</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img id="icon2" src="/images/mobile-ap-removebg-preview.png" alt="">
+                <p>Give us a call </p>
+            </div>
+            <div class="icon">
+                <img id="icon3" src="/images/mail-icon-removebg-preview.png" alt="">
+                <p>Get in touch</p>
+            </div>
+            <div class="icon">
+                <img id="icon4" src="/images/payment-icon-removebg-preview.png" alt="">
+                <p>Mpesa till 850024</p>
+            </div>
+        </nav>
     </div>
 
     <!-- about page -->
@@ -55,264 +78,261 @@
     </div>
 
     <!-- products -->
-    <div class="container">
-        <h2 id="product.html">Products</h2>
-        <a href="leafy.html" class="h5">Green-Leafy Vegetables</a>
-        <div class="row" id="overlay">
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/hybrid grn spinach.jpg" alt="greens">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Hybrid spinach</b></h4>
-                            <p class="shop-price">Ksh.120 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/kales.webp" alt="greens">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Sukumawiki</b></h4>
-                            <p class="shop-price">Ksh.100 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="/images/spinach.png" alt="greens">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Spinach</b></h4>
-                            <p class="shop-price">Ksh.110 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/fresh-methi.jpg" alt="green">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Fresh methi</b></h4>
-                            <p class="shop-price">Ksh.150 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <h2 id="product.html" class="productsh">Products</h2>
+
+    <div class="bigContainer">
+        <div class="categories">
+            <h6>categories</h6>
+            <a href="leafy.html" class="p">Green-Leafy Vegetables</a>
+            <a href="root.html" class="p">Root Vegetables</a>
+            <a href="others.html" class="p">Others Vegetables</a>
+
         </div>
-
-        <a href="root.html" class="h5">Root Vegetables</a>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/arrowroot.png" alt="roots" id="changeimg">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Arrow roots</b></h4>
-                            <p class="shop-price">Ksh.150 per Kg</p>
+        <div class="items">
+            <div class="row" id="overlay">
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/hybrid grn spinach.jpg" alt="greens">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Hybrid spinach</b></h4>
+                                <p class="shop-price">Ksh.120 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
                         </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/kales.webp" alt="greens">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Sukumawiki</b></h4>
+                                <p class="shop-price">Ksh.100 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="/images/spinach.png" alt="greens">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Spinach</b></h4>
+                                <p class="shop-price">Ksh.110 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/fresh-methi.jpg" alt="green">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Fresh methi</b></h4>
+                                <p class="shop-price">Ksh.150 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/sweet potatoes.jpg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Sweet potatoes</b></h4>
-                            <p class="shop-price">Ksh.130 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="/images/irish.JPG" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Irish potatoes</b></h4>
-                            <p class="shop-price">Ksh.110 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/cassava.jpg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Cassava</b></h4>
-                            <p class="shop-price">Ksh.150 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a href="others.html" class="h5">Others Vegetables</a>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/red onions.jpg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Red onions</b></h4>
-                            <p class="shop-price">Ksh.300 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/tomatoes.jpg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Totatoes</b></h4>
-                            <p class="shop-price">Ksh.200 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="/images/avocado.jpg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Ovacado</b></h4>
-                            <p class="shop-price">Ksh.110 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/garlic.jpeg" alt="roots">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Garlic</b></h4>
-                            <p class="shop-price">Ksh.300 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row" id="last-row">
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/cabbage.png" alt="">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>cabbage(1)</b></h4>
-                            <p class="shop-price">Ksh.200 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/purple cabbage.jpg" alt="">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>cabbage(2)</b></h4>
-                            <p class="shop-price">Ksh.250 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="/images/broccoli.jpg" alt="">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>Broccoli</b></h4>
-                            <p class="shop-price">Ksh.150 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="shop-item">
-                    <div class="card">
-                        <img class="shop-item-image" src="images/cucumber.jpg" alt="">
-                        <div class="shop-item-body">
-                            <h4 class="item-title"><b>cucumber</b></h4>
-                            <p class="shop-price">Ksh.120 per Kg</p>
-                        </div>
-                        <div id="add-cart">
-                            <button class="add-cart-button" type="submit">Add to cart</button>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/arrowroot.png" alt="roots" id="changeimg">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Arrow roots</b></h4>
+                                <p class="shop-price">Ksh.150 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/sweet potatoes.jpg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Sweet potatoes</b></h4>
+                                <p class="shop-price">Ksh.130 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="/images/irish.JPG" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Irish potatoes</b></h4>
+                                <p class="shop-price">Ksh.110 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/cassava.jpg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Cassava</b></h4>
+                                <p class="shop-price">Ksh.150 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/red onions.jpg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Red onions</b></h4>
+                                <p class="shop-price">Ksh.300 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/tomatoes.jpg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Totatoes</b></h4>
+                                <p class="shop-price">Ksh.200 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="/images/avocado.jpg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Ovacado</b></h4>
+                                <p class="shop-price">Ksh.110 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/garlic.jpeg" alt="roots">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Garlic</b></h4>
+                                <p class="shop-price">Ksh.300 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="last-row">
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/cabbage.png" alt="">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>cabbage(1)</b></h4>
+                                <p class="shop-price">Ksh.200 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/purple cabbage.jpg" alt="">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>cabbage(2)</b></h4>
+                                <p class="shop-price">Ksh.250 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="/images/broccoli.jpg" alt="">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>Broccoli</b></h4>
+                                <p class="shop-price">Ksh.150 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop-item">
+                        <div class="card">
+                            <img class="shop-item-image" src="images/cucumber.jpg" alt="">
+                            <div class="shop-item-body">
+                                <h4 class="item-title"><b>cucumber</b></h4>
+                                <p class="shop-price">Ksh.120 per Kg</p>
+                            </div>
+                            <div id="add-cart">
+                                <button class="add-cart-button" type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <button class="btn btn-primary cart-purchase" type="button" onclick="purchaseCLicked()">PURCHASE</button> -->
+
         </div>
     </div>
 
-    <div class="cart">
-        <h1>CART</h1>
-        <section class="cart">
-            <div class="cart-items">
 
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">Ksh.0</span>
-                <button class="btn btn-primary cart-purchase" type="button">PURCHASE</button>
-            </div>
-        </section>
-    </div>
 
     <div id="contacts.html">
         <footer>
